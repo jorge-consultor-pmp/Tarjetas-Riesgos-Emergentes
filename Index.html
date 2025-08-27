@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards de Gestión de Riesgos Emergentes</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .flashcard {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s ease;
+        }
+        .flashcard-question {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+        .flashcard-answer {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            padding-top: 20px;
+        }
+        .flashcard-answer.hidden {
+            display: none;
+        }
+        .flashcard-answer strong {
+            color: #0056b3;
+        }
+        .show-answer-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+        }
+        .show-answer-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flashcards de Gestión de Riesgos Emergentes</h1>
+
+    <div class="container">
+        <div class="flashcard">
+            <div class="flashcard-question">1. ¿Qué son los riesgos emergentes según la norma ISO 31050?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Son fenómenos no comprendidos o previstos completamente debido a su complejidad y la rapidez con la que surgen.<br><br>
+                <strong>Justificación:</strong> El documento los define como riesgos asociados a la incertidumbre de cambios dinámicos en diversos entornos, que carecen de patrones históricos para predecirlos.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">2. Menciona una característica fundamental que diferencia a los riesgos emergentes de los tradicionales.</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> La falta de datos históricos.<br><br>
+                <strong>Justificación:</strong> A diferencia de los riesgos tradicionales, los emergentes no tienen un historial consolidado, lo que dificulta el uso de métodos cuantitativos para su evaluación.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">3. ¿Cuál es el enfoque principal de la norma ISO 31050?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> La identificación y gestión de riesgos emergentes.<br><br>
+                <strong>Justificación:</strong> El documento establece que la ISO 31050 es una extensión de la ISO 31000, orientada específicamente a los riesgos que son nuevos, inciertos y altamente impredecibles.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">4. ¿Cómo complementa la ISO 31050 a la ISO 31000?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Proporciona un enfoque específico y exploratorio para los riesgos emergentes, mientras que la ISO 31000 ofrece un marco general para todo tipo de riesgos.<br><br>
+                <strong>Justificación:</strong> El texto explica que la ISO 31000 es la norma de referencia amplia, y la ISO 31050 se especializa en la anticipación de riesgos que surgen de eventos inesperados.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">5. ¿Qué es el "Ciclo de Inteligencia de Riesgo" según la ISO 31050?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Un proceso continuo de recopilación, análisis y difusión de información para identificar y tratar riesgos emergentes de forma adaptativa.<br><br>
+                <strong>Justificación:</strong> El documento lo describe como un concepto fundamental de la norma para lidiar con la incertidumbre, comenzando por la identificación de "señales débiles".
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">6. ¿Qué son las "señales débiles" en la gestión de riesgos emergentes?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Indicadores iniciales de cambios en el entorno que, analizados en conjunto, pueden señalar la aparición de un riesgo significativo.<br><br>
+                <strong>Justificación:</strong> El documento las define como el punto de partida del Ciclo de Inteligencia de Riesgo para detectar amenazas antes de que se manifiesten.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">7. ¿Qué tipo de enfoque promueve la ISO 31050 para la gestión de riesgos?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Un enfoque integrado, holístico, proactivo y adaptativo.<br><br>
+                <strong>Justificación:</strong> El documento resalta que la norma busca que la gestión de riesgos no sea una actividad aislada, sino una parte esencial de la planificación corporativa, anticipándose a los hechos.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">8. ¿Cuál es la principal diferencia de enfoque entre la ISO 31050 y el ESRM de ASIS?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> La ISO 31050 se enfoca en la resiliencia organizacional ante lo desconocido, mientras que el ESRM se centra en la protección de activos contra amenazas concretas.<br><br>
+                <strong>Justificación:</strong> El texto comparativo indica que el ESRM tiene un enfoque específico en seguridad corporativa, mientras que la ISO 31050 es más amplia y exploratoria.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">9. Según la imagen de niveles de incertidumbre, ¿qué caracteriza al "Nivel 1"?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> "Un futuro bastante claro".<br><br>
+                <strong>Justificación:</strong> La imagen muestra en el Nivel 1 una proyección lineal y predecible, indicando un bajo grado de incertidumbre donde el futuro se puede anticipar con base en tendencias claras.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">10. ¿Qué representa el "Nivel 4" en el modelo de incertidumbre profunda?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> "Un futuro desconocido".<br><br>
+                <strong>Justificación:</strong> La imagen del Nivel 4 muestra flechas que se extienden en todas las direcciones, simbolizando una falta total de previsibilidad donde no es posible identificar futuros posibles ni asignarles probabilidades.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">11. ¿A qué nivel de incertidumbre corresponden los "Futuros alternativos (con probabilidades)"?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Nivel 2.<br><br>
+                <strong>Justificación:</strong> La imagen asocia el Nivel 2 con un árbol de decisión (A, B, C), lo que indica que existen varios escenarios posibles a los que se les puede asignar una probabilidad de ocurrencia.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">12. ¿Qué es un evento geofísico de gran escala?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Un fenómeno natural originado en la Tierra, de gran magnitud, con potencial de causar impactos generalizados.<br><br>
+                <strong>Justificación:</strong> Se basa en la definición de geofísica y la interpretación del término, como sismos de alta magnitud, erupciones volcánicas o tsunamis.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">13. En el diagrama de araña, ¿cómo se clasifica la "Complejidad" de un evento geofísico de gran escala?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Extremo.<br><br>
+                <strong>Justificación:</strong> La línea del perfil de riesgo en el diagrama de araña alcanza el nivel más externo (rojo) en el eje de "Complejidad", indicando la máxima dificultad para entender y gestionar sus interacciones.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">14. Según el análisis del evento geofísico, ¿cómo se evalúa la "Recuperación"?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Baja.<br><br>
+                <strong>Justificación:</strong> El perfil de riesgo en el diagrama de araña se sitúa en el nivel más interno (verde) para la dimensión "Recuperación", lo que sugiere que la capacidad de volver a la normalidad es un punto débil.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">15. ¿Cuál es la conclusión principal del análisis de riesgo presentado en el diagrama de araña?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> El riesgo "Requiere tratamiento".<br><br>
+                <strong>Justificación:</strong> Una etiqueta en la parte superior derecha del diagrama indica explícitamente que, debido a la alta valoración en dimensiones como adaptabilidad y complejidad, se necesitan acciones de mitigación.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">16. ¿Por qué es importante gestionar riesgos emergentes en un mundo descrito como VUCA y BANI?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Porque estos entornos se caracterizan por la volatilidad, incertidumbre (VUCA), fragilidad y no linealidad (BANI), lo que hace que los riesgos emergentes sean más frecuentes y amenazantes.<br><br>
+                <strong>Justificación:</strong> El documento explica que la anticipación de riesgos es una ventaja estratégica fundamental en estos contextos dinámicos.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">17. ¿Cómo facilita la ISO 31050 la transformación de riesgos en oportunidades?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Fomentando un enfoque proactivo que permite a las organizaciones innovar y adaptarse antes que sus competidores, creando ventajas competitivas.<br><br>
+                <strong>Justificación:</strong> El documento señala que la identificación temprana de riesgos permite a las empresas no solo minimizar impactos, sino también explorar nuevos mercados o servicios.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">18. Menciona una barrera cultural clave para implementar la ISO 31050.</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Una mentalidad reactiva, donde la organización está acostumbrada a gestionar las consecuencias de los riesgos solo después de que se materializan.<br><br>
+                <strong>Justificación:</strong> El documento identifica la resistencia al cambio de un enfoque reactivo a uno proactivo como una de las mayores dificultades culturales.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">19. ¿Qué recomienda la ISO 31050 para superar la falta de datos históricos en riesgos emergentes?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> El uso de técnicas cualitativas como la exploración de escenarios, el análisis de tendencias y las consultas con expertos.<br><br>
+                <strong>Justificación:</strong> El documento explica que estas herramientas son valiosas para abordar la incertidumbre y complejidad inherentes a los riesgos emergentes.
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">20. ¿Por qué es crucial integrar la gestión de riesgos emergentes con los objetivos estratégicos de la organización?</div>
+            <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar Respuesta</button>
+            <div class="flashcard-answer hidden">
+                <strong>Respuesta:</strong> Para asegurar que las acciones de mitigación protejan las áreas más críticas para el éxito de la organización y para que la gestión de riesgos actúe como facilitadora de la innovación.<br><br>
+                <strong>Justificación:</strong> El documento enfatiza que este alineamiento permite que la gestión de riesgos no sea una actividad aislada, sino una parte esencial de la planificación corporativa.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                button.textContent = 'Ocultar Respuesta';
+            } else {
+                answer.classList.add('hidden');
+                button.textContent = 'Mostrar Respuesta';
+            }
+        }
+    </script>
+
+</body>
+</html>
